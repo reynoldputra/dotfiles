@@ -80,6 +80,8 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(
   git
   zsh-autosuggestions
+  z
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 source ~/.oh-my-bash/aliases/general.aliases.sh
+# [ -f ~/.config/gh/gh-fused/ghfused.source ] && source ~/.config/gh/gh-fused/ghfused.source
 # source ~/.config/aliases/git.sh
 
 export EDITOR=vim
@@ -129,3 +132,27 @@ SHELL="/bin/zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/c/Users/Reynold Putra"
+export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
+export PATH="$PATH:/mnt/c/HashiCorp/Vagrant/bin"
+export PATH="$PATH:/mnt/c/Windows/System32"
+export PATH="$PATH:/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
+. ~/linuxcode/kuliah/tka/ansible/hacking/env-setup -q
+
+
+#golang
+export GOPATH=/lib/go-1.18
+export PATH=$PATH:$GOPATH/bin
+
+
+#adb
+# export ANDROID_HOME=/mnt/d/Program\ File/Android-SDK
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=/mnt/d/Program\ File/Android-SDK

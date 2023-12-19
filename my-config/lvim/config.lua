@@ -75,23 +75,6 @@ lvim.plugins = {
       require("config.coderunner")
     end,
   },
-  {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-    setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
-    ft = { "markdown" }
-  }
-  -- {
-  --    "giusgad/pets.nvim",
-  --    dependencies = { "MunifTanjim/nui.nvim", "giusgad/hologram.nvim" },
-  --  },
-  --  {
-  --    'VonHeikemen/fine-cmdline.nvim',
-  --    requires = {
-  --      {'MunifTanjim/nui.nvim'}
-  --    }
-  --  }
-  -- {"tribela/vim-transparent"}
 }
 
 ------- Code runner config --------
@@ -155,10 +138,9 @@ formatters.setup {
 ------------------------------------------
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { name = "eslint" },
+  { name = "eslint_d" },
   { name = "golangci_lint" }
 }
 
 require('settings')
 require('keymaps')
-

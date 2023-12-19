@@ -48,9 +48,9 @@ function _omb_alias_general_mkdir_init {
     _omb_alias_general_mkdir_init "$@"
 }
 
-alias cp='_omb_alias_general_cp_init'       # Preferred 'cp' implementation
-alias mv='_omb_alias_general_mv_init'       # Preferred 'mv' implementation
-alias mkdir='_omb_alias_general_mkdir_init' # Preferred 'mkdir' implementation
+# alias cp='_omb_alias_general_cp_init'       # Preferred 'cp' implementation
+# alias mv='_omb_alias_general_mv_init'       # Preferred 'mv' implementation
+# alias mkdir='_omb_alias_general_mkdir_init' # Preferred 'mkdir' implementation
 alias ll='ls -lAFh'                         # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias nano='nano -W'                        # Preferred 'nano' implementation
@@ -71,6 +71,10 @@ alias py3='python3'
 alias lv='lvim'
 alias gc='gcc -o ${1%.c} $1'
 alias tm='tmux'
+alias vgr='vagrant'
+alias mkcd='_mkcd(){ mkdir "$1"; cd "$1";}; _mkcd'
+alias tl='telnet'
+alias tlg='telnet 192.168.0.3'
 
 ### docker
 alias dve="docker -v"
