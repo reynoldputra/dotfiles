@@ -1,0 +1,16 @@
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+symbol = '󰸏 '
+[aws.region_aliases]
+# ap-southeast-1 = 'sg'
+
+[terraform]
+symbol="󱁢 "
+
+
+[os]
+disabled = true
+
+
+[os.symbols]
+Ubuntu = "󰕈 "
